@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/dediecss.css" rel="stylesheet">
+  
+</head>
+<body>
+
+<div class="dedie-bann-sect">     </div>
+
+
+<div class="dedie-container">
+    <!-- BOTONES -->
+    <div class="dedie-nav-buttons">
+        <button class="dedie-prev-button hide">Previous</button> 
+        <button class="dedie-next-button">Next</button>
+    </div>
+    <!-- END BOTONES -->
+
+    <!-- BOTON SCROLL -->
+    <button onclick="scrollToTop()" id="back-to-top-curso">
+            <img src="img/ICO_UP.png" style="max-width: 20px;">
+    </button>
+    <!-- END BOTON SCROLL -->
+
+    <!-- TABS SIDEBAR -->
+    <div class="dedie-tab-sidebar">
+        <ul>
+            <li class="active" >
+                <a href="#"> 
+                <img src="img/INTRODUCCION.png">
+                Tema1(ImagenalaIzquierda)
+                </a> 
+            </li>
+            <li><a href="#">Tema2</a></li>
+            <li>
+                <a href="#" class="dedie-dropdown-img">
+                    Tema3(ConSubtema)
+                    <img src="img/ICO_DROPDOWN.png" class="default-icon">
+                    <img src="img/ICO_DROPDOWN2.png" class="hover-icon">
+                </a> 
+                <ul class="dedie-dropdown">
+                    <li style="padding-left: 3vw;"><a href="#">Subtema3.1</a></li>
+                    <li style="padding-left: 3vw;"><a href="#">Subtema3.2</a></li>
+                    <li style="padding-left: 3vw;"><a href="#">Subtema3.3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- END TABS SIDEBAR -->
+
+    <!-- 
+    Nota: 
+    #Para agregar mas pestañas sin subtemas (Si es necesario agregar una imagen a la izquierda agregarla)agregar:
+    
+    <li><a href="#">NombreTema</a></li> 
+
+    IMPORTANTE: Solo la primera <li> lleva la clase 'active'.
+    
+    #Para agregar una pestaña de tema con subtemas agregar, no borrar las imagenes dropdown!:
+
+    <li>
+        <a href="#" class="dedie-dropdown-img">
+            Tema_principal
+            <img src="img/ICO_DROPDOWN.png" class="default-icon">              
+            <img src="img/ICO_DROPDOWN2.png" class="hover-icon">
+        </a> 
+        <ul class="dedie-dropdown">
+            <li style="padding-left: 3vw;"><a href="#">Subtema1</a></li>
+            <li style="padding-left: 3vw;"><a href="#">Subtema2</a></li>
+            <li style="padding-left: 3vw;"><a href="#">Subtema...n </a></li>
+        </ul>
+    </li>
+    -->
+
+    <!-- CONTENIDO DE TABS -->
+    <div class="dedie-marco-content">
+        <div class="dedie-content-container">
+            
+                <!-- Tab 1 -->
+                <div class="dedie-tab-content active">
+                    <div class="dedie-ind_sect">  <h2 style="text-align:center;"> Tema 1</h2>     </div>
+                    <hr> <br>
+
+                    TextoTema1
+
+                    <br>
+                    <p style="font-size: 13px; text-align: center!important;"><em>Conector al siguiente <strong onclick="showNextTab()" style="cursor: pointer; color: #8D6184;">tema</strong></em></p>
+                </div>
+                <!-- End tab1 -->
+
+
+                <!-- Tab 2 -->
+                <div class="dedie-tab-content">
+                    <div class="dedie-ind_sect">  <h2 style="text-align:center;"> Tema2</h2>     </div>
+                    <hr><br>
+
+                    TextoTema2
+
+                </div>
+                <!-- End Tab2 -->
+
+
+
+                <!-- TAB 3 -->
+                <div class="dedie-tab-content">
+                    <div class="dedie-ind_sect">  <h2 style="text-align:center;"> Tema 3 </h2>     </div>
+                    <hr><br>
+
+                   TextoTema3
+
+                </div>
+                <!-- END TAB 3 -->
+
+
+
+                <!-- TAB 4 -->
+                <div class="dedie-tab-content">
+                    <div class="dedie-ind_sect">  <h2 style="text-align:center;"> Subtema 3.1 </h2>     </div>
+                    <hr><br>
+
+                    TextoTema 3.1
+
+                </div>
+                <!-- END TAB 4 -->
+
+                <!-- TAB 5 -->
+                <div class="dedie-tab-content">
+                    <div class="dedie-ind_sect">  <h2 style="text-align:center;"> Subtema 3.2</h2>     </div>
+                    <hr><br>
+
+                    TextoTema 3.2
+                   
+                </div>
+                <!-- END TAB 5 -->
+
+                <!-- TAB 6 -->
+                <div class="dedie-tab-content">
+                    <div class="dedie-ind_sect">  <h2 style="text-align:center;"> Subtema 3.3 </h2>     </div>
+                    <hr><br>
+
+                    TextoTema 3.3
+
+                    <br><br>
+                   
+                </div>
+                <!-- END TAB 6 -->
+
+
+
+
+
+
+        </div>      <!-- END CONTENT CONTAINER -->
+    </div>          <!-- END CONTENIDO TABS -->
+
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/dedie-tabs.js"></script>
+<script src="js/backtotop.js"></script>
+
+<script>
+    var style = document.createElement("link");
+    document.head.appendChild(style);
+    style.setAttribute("rel", "stylesheet");
+    style.setAttribute("href",
+        "css/dediecss.css"
+    );
+</script>
+
+
+</body>
+</html>

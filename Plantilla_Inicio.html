@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/dediecss.css" rel="stylesheet">
+  
+</head>
+<body>
+
+<div class="dedie-bann-sect">     </div>
+
+
+<div class="dedie-container">
+     <!-- BOTONES -->
+    <div class="dedie-nav-buttons">
+        <button class="dedie-prev-button hide">Previous</button> 
+        <button class="dedie-next-button">Next</button>
+    </div>
+    <!-- END BOTONES -->
+
+    <!-- BOTON SCROLL -->
+    <button onclick="scrollToTop()" id="back-to-top-curso">
+            <img src="img/ICO_UP.png" style="max-width: 20px;">
+    </button>
+    <!-- END BOTON SCROLL -->
+
+    <!-- TABS SIDEBAR -->
+    <div class="dedie-tab-sidebar">
+        <ul>
+            <li class="active" ><a href="#">Introducción al curso </a>     </li>
+            <li><a href="#">Conoce a tus docentes </a> </li>
+            <li><a href="#">Datos generales </a></li>
+        </ul>
+    </div>
+    <!-- END TABS SIDEBAR -->
+
+    <!-- CONTENIDO DE TABS -->
+    <div class="dedie-marco-content">
+        <div class="dedie-content-container">
+            
+                <!-- Tab 1 -->
+                <div class="dedie-tab-content active">
+                    <div class="dedie-ind_sect">  <h2 style="text-align:center;"> Introducción al curso</h2>     </div>
+                    <hr> <br>
+
+                    <h5 style="text-align:center!important; font-weight: bold; color: #00A4B7;">  Bienvenid@s, </h5>
+                    <br>
+
+                    <center>
+                        <div class="guia-dedie" style="width: 75%; margin: 0 auto; height: 415px!important;">
+                            <iframe src="remplazarURL" style="  width: 100%; height: 100%;" allow="autoplay"></iframe>
+                        </div>
+                    </center>
+
+                    <br>
+                   <p style="font-size: 13px; text-align: center!important;"><em>Conector al siguiente <strong onclick="showNextTab()" style="cursor: pointer; color: #00A4B7;">tema</strong></em></p>
+
+                </div>
+                <!-- End tab1 -->
+
+
+                <!-- Tab 2 -->
+                <div class="dedie-tab-content">
+                    <div class="dedie-ind_sect">  <h2 style="text-align:center;"> Conoce a tus docentes </h2>     </div>
+                    <hr> <br>
+
+                    <div class="dedie-container-semblanza">
+                        <div class="profile-dedie">
+                            <a href=" img/holder-img-profile.png" target="_blank"> 
+                                <img src=" img/holder-img-profile.png">
+                            </a>
+                            
+                            <div class="profile-dedie-info"> 
+                                <h5> Nombre_docente </h5>
+                                remplazar_email <br>
+                                <a href="remplazarURL" target="_blank">Semblanza</a>
+                            </div>
+                        </div>  
+                    </div>
+                    
+                    <p style="font-size: 13px; text-align: center!important;"><em>Conector al siguiente <strong onclick="showNextTab()" style="cursor: pointer; color: #00A4B7;">tema</strong></em></p>
+
+                </div>
+                <!-- End Tab2 -->
+
+
+
+                <!-- TAB 3 -->
+                <div class="dedie-tab-content">
+                    <div class="dedie-ind_sect">  
+                        <h2 style="text-align:center;"> Conoce a tus docentes </h2>     
+                    </div>
+                    <hr> <br>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <br>
+                    
+                    <!--    ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                            ;;;         OBJETIVOS   ;;;
+                            ;;;;;;;;;;;;;;;;;;;;;;;;;;;         -->
+                    <hr><br>
+                    <h5 style="text-align:center!important; font-weight: bold; color: #00A4B7;"> Objetivo general del curso  </h5>  <br>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    
+                    <!--    ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                            ;;; OBJETIVOS ESPECIF   ;;;
+                            ;;;;;;;;;;;;;;;;;;;;;;;;;;;         -->
+                    <br><hr><br>
+                    <h5 style="text-align:center!important; font-weight: bold; color: #00A4B7;"> Objetivos específicos  </h5> <br>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    
+                    
+                    <!--    ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                            ;;;     ORGANIZACION    ;;;
+                            ;;;;;;;;;;;;;;;;;;;;;;;;;;;         -->
+                    <br><hr><br>
+                    <h5 style="text-align:center!important; font-weight: bold; color: #00A4B7;"> Organización del curso </h5> <br>
+                
+                    <center>
+                    <div class="tablas" id="rotating-table" >
+                        <div class="dem-table-responsive" >
+                            <table class="table" style="width: 100%!important">
+                            <thead>
+                            <tr>
+                                <th scope="col">Titulo</th>
+                                <th scope="col">Fechas</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <th scope="row">    Titulo   </th>
+
+                                    <td>    Dia XX | 00:00 a.m. a 00:00 p.m.           </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">    Titulo   </th>
+                                    
+                                     <td>    Dia XX | 00:00 a.m. a 00:00 p.m.           </td>
+                                </tr>                  
+                            </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                    </center>
+
+                    
+                    <br><hr><br>
+                    <h5 style="text-align:center!important; font-weight: bold; color: #00A4B7;"> Evaluación del curso </h5><br>
+                    <p>Desarrollar un texto breve para presentar los momentos, tipos, criterios e instrumentos de evaluación que se tomarán en cuenta durante la asignatura. </p>
+                    
+
+                </div>
+                <!-- END TAB 3 -->
+
+
+
+
+        </div>      <!-- END CONTENT CONTAINER -->
+    </div>          <!-- END CONTENIDO TABS -->
+
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/dedie-tabs.js"></script>
+<script src="js/backtotop.js"></script>
+<script>
+    var style = document.createElement("link");
+    document.head.appendChild(style);
+    style.setAttribute("rel", "stylesheet");
+    style.setAttribute("href",
+        "css/dediecss.css"
+    );
+</script>
+
+
+</body>
+</html>
